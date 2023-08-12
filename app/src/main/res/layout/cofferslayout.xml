@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77F2E6">
+
+    <TextView
+        android:id="@+id/cofTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="How much mana can be produced"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cofTitle2" />
+
+    <TextView
+        android:id="@+id/cofTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cabal Coffers"
+        android:textColor="#F25C05"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Swamps you control"
+        android:textColor="#F25C05"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cofTitle" />
+
+    <TextView
+        android:id="@+id/coffersinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Coffers you control"
+        android:textColor="#F25C05"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swamps" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="85dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:clickable="true"
+        android:backgroundTint="#F2D022"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/swamps"
+        app:layout_constraintTop_toBottomOf="@+id/info1"
+        app:srcCompat="@drawable/plus1" />
+
+    <TextView
+        android:id="@+id/swamps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info1" />
+
+    <TextView
+        android:id="@+id/swamps3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffersinfo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="87dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="212dp"
+        android:backgroundTint="#8E72F2"
+        android:clickable="true"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="55dp"
+        app:layout_constraintEnd_toStartOf="@+id/swamps"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minus1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton6"
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:backgroundTint="#8E72F2"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="55dp"
+        app:layout_constraintEnd_toStartOf="@+id/swamps3"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffersinfo"
+        app:srcCompat="@drawable/minus1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton8"
+        android:layout_width="86dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="55dp"
+        android:backgroundTint="#F2D022"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/swamps3"
+        app:layout_constraintTop_toBottomOf="@+id/coffersinfo"
+        app:srcCompat="@drawable/plus1" />
+
+    <TextView
+        android:id="@+id/totmana"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:textColor="#F25C05"
+        android:text="Total Mana"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swamps3" />
+
+    <TextView
+        android:id="@+id/mana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totmana" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
