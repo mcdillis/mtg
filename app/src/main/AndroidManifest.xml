@@ -11,17 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
         <activity
-            android:name=".lifetracker"
+            android:name=".homepage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".lifetracker"
+            android:exported="true"/>
+
+        <activity android:name=".coffers"
+            android:exported="true"/>
+
+        <activity android:name=".manufacturer"
+            android:exported="true"/>
+
 
 
     </application>

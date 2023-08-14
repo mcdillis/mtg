@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class homepage extends AppCompatActivity {
     Button gametrack;
     Button coffers;
+    Button turns;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.homelay);
         this.gametrack=findViewById(R.id.trackbtn);
         this.coffers=findViewById(R.id.cofbtn);
+        this.turns=findViewById(R.id.turnsbtn);
 
         //-------------------make buttons do things -
         gametrack.setOnClickListener(new View.OnClickListener() {
@@ -31,8 +33,18 @@ public class homepage extends AppCompatActivity {
         coffers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(homepage.this, coffers.class);
-                startActivity(i);
+                Intent intent = new Intent(homepage.this, coffers.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+        turns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(homepage.this, manufacturer.class);
+                startActivity(intent);
 
             }
 

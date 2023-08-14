@@ -7,29 +7,7 @@
     android:background="#77F2E6">
 
 
-    <Button
-        android:id="@+id/p2add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="168dp"
-        android:text="+"
-        android:backgroundTint="#8E72F2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/p2min"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="28dp"
-        android:text="-"
-        android:backgroundTint="#F2D022"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+    <!--<Button
         android:id="@+id/p1add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,90 +16,180 @@
         android:text="+"
         android:backgroundTint="#8E72F2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />-->
 
-    <Button
+    <!--<Button
         android:id="@+id/p1min"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="144dp"
         android:layout_marginBottom="164dp"
         android:backgroundTint="#F2D022"
-
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/p1add"
         app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="142dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#F25C05"
+        android:text="reset"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/p1name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2name"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <Button
+        android:id="@+id/bthome"
+        android:layout_width="142dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/white"
+        android:text="HOME"
+        android:textSize="24dp"
+        android:textColor="#F25C05"
+        app:layout_constraintBottom_toTopOf="@+id/p1name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2name"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/p2minus"
+        android:layout_width="85dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#F2D022"
+        android:clickable="true"
+        android:rotationX="-180"
+        android:rotationY="-180"
+        app:fabCustomSize="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="55dp"
+        app:srcCompat="@drawable/minus1" />
+
+    <EditText
+        android:id="@+id/p2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="177dp"
+        android:rotationX="-180"
+        android:rotationY="-180"
+        android:text="Player 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/p2add"
+        android:layout_width="85dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#8E72F2"
+        android:clickable="true"
+
+        android:rotationX="-180"
+        android:rotationY="-180"
+        app:fabCustomSize="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="55dp"
+        app:srcCompat="@drawable/plus1" />
 
     <TextView
         android:id="@+id/p2health"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="80dp"
+        android:fromDegrees="180"
+        android:rotationX="-180"
+        android:rotationY="-180"
         android:text="20"
         android:textColor="@color/black"
         android:textSize="96sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/p2min"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintEnd_toStartOf="@+id/p2minus"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toEndOf="@+id/p2add"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/p1health"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
-        android:text="20"
-        android:textColor="@color/black"
-        android:textSize="96sp"
-        android:textStyle="bold"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/p1minus"
+        android:layout_width="85dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#F2D022"
+        android:clickable="true"
+        app:fabCustomSize="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/p1add"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintStart_toEndOf="@+id/p1min" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2minus"
+        app:layout_constraintVertical_bias="0.637"
+        app:maxImageSize="55dp"
+        app:srcCompat="@drawable/minus1" />
 
     <EditText
         android:id="@+id/p1name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="220dp"
         android:text="Player 1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/p2name"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/p1add"
+        android:layout_width="85dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="#8E72F2"
+        android:clickable="true"
+        app:fabCustomSize="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2add"
+        app:maxImageSize="55dp"
+        app:srcCompat="@drawable/plus1" />
+
+    <TextView
+        android:id="@+id/p1health"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
-        android:text="Player 2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
+        android:layout_marginBottom="76dp"
+        android:text="20"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="96sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btReset"
-        android:layout_width="96dp"
-        android:layout_height="78dp"
-        android:backgroundTint="#F25C05"
-        android:text="reset"
-        app:layout_constraintBottom_toTopOf="@+id/p1name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/p2name" />
-
-    =
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
